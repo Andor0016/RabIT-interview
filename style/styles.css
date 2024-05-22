@@ -1,3 +1,38 @@
 body{
     background-color: #0c1f2d;
+    text-align: center;
+}
+
+.headtitle{
+    color: #d4d4d4;
+    font-size: 8rem;
+    font-family: 'Arial';
+    margin-top: 50px;
+}
+
+.title{
+    color: #d4d4d4;
+    font-size: 3rem;
+    font-family: 'Arial';
+    margin-top: 50px;
+}
+
+#menu{
+    margin: 10rem 0;
+
+}
+
+#menu a{
+    display: inline-block;
+    color: #000080;
+    background-color: #b0e0e6;
+    text-align: center;
+    width: 20rem;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+#menu a:hover{
+    background-color: #00bfff;
 }

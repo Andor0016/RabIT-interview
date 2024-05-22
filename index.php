@@ -9,13 +9,13 @@
     </head> 
     <body>
         <main>
-            <h1>Welcome!</h1>
-            <h3>Select from the available options!</h3>
+            <h1 class="headtitle">Welcome!</h1>
+            <h3 class="title">Select from the available options!</h3>
             <div id="menu">
-                <a href="#">
+                <a href="./pages/usersView.php">
                     <p>Users</p>
                 </a>
-                <a href="#">
+                <a href="./pages/advertismentsView.php">
                     <p>Advertisments</p>
                 </a>
             </div>
