@@ -1,6 +1,6 @@
 <?php
 
-namespace php\User;
+namespace php;
 
 class UserView
 {
@@ -13,7 +13,7 @@ class UserView
                     <meta author="Andor Balo">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Users</title>
-                    <link rel="stylesheet" href="../../style/styles.css">
+                    <link rel="stylesheet" href="../style/styles.css">
                 </head>
                 <body>
                     <main>
@@ -31,7 +31,7 @@ class UserView
                                 <?php } ?>
                         </table>
                         <div class="menu">
-                            <a href="../../index.php">
+                            <a href="../index.php">
                                 <p>Vissza</p>
                             </a>
                         </div>

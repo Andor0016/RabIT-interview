@@ -16,7 +16,7 @@ class DBConnection
 
     public function getAdvertisements(){
         $connection = $this->connect();
-        $sqlquery = "SELECT advid, userid, advtitle FROM advertisements";
+        $sqlquery = "SELECT advid, username, advtitle FROM advertisements, users WHERE advertisements.userid = users.userid";
         $advertisements = $connection->query($sqlquery);
         $this->disconnect($connection);
         return $advertisements;

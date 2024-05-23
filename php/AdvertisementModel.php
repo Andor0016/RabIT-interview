@@ -1,12 +1,10 @@
 <?php
 
-namespace php\Advertisement;
+namespace php;
 
-use php\DBConnection;
-use php\User\User;
-
-include("../DBConnection.php");
+include("./DBConnection.php");
 include("./Advertisement.php");
+include("./User.php");
 
 class AdvertisementModel
 {
@@ -16,9 +14,7 @@ class AdvertisementModel
         $advertisementsfromdb = $dbConnection->getAdvertisements();
         if($advertisementsfromdb->num_rows > 0){
             while($advertisement = $advertisementsfromdb->fetch_assoc()) {
-                $userfromdb = $dbConnection->getUserByID($advertisement['userid']);
-                $user = new User($advertisement['userid'], $userfromdb[0]['username']);
-                $advertisement = new Advertisement($advertisement['advid'], $user, $advertisement['advtitle']);
+                $advertisement = new Advertisement($advertisement['advid'], $advertisement['username'], $advertisement['advtitle']);
                 $advertisements[] = $advertisement;
             }}
         return $advertisements;

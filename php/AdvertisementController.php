@@ -1,6 +1,6 @@
 <?php
 
-namespace php\Advertisement;
+namespace php;
 
 include("./AdvertisementModel.php");
 include("./AdvertisementView.php");

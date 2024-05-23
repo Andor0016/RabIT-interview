@@ -1,10 +1,8 @@
 <?php
 
-namespace php\User;
+namespace php;
 
-use php\DBConnection;
-
-include("../DBConnection.php");
+include("./DBConnection.php");
 include("./User.php");
 
 class UserModel

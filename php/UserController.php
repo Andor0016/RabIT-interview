@@ -1,6 +1,6 @@
 <?php
 
-namespace php\User;
+namespace php;
 
 include("./UserModel.php");
 include("./UserView.php");

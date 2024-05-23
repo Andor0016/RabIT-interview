@@ -1,6 +1,6 @@
 <?php
 
-namespace php\Advertisement;
+namespace php;
 
 class Advertisement
 {
