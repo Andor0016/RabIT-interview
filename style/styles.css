@@ -17,12 +17,11 @@ body{
     margin-top: 5rem;
 }
 
-#menu{
-    margin: 10rem 0;
-
+.menu{
+    margin: 5rem 0;
 }
 
-#menu a{
+.menu a{
     display: inline-block;
     color: #000080;
     background-color: #b0e0e6;
@@ -31,9 +30,24 @@ body{
     margin: 0 0.5rem;
     text-decoration: none;
     font-size: 2rem;
+    font-family: 'Arial';
     border-radius: 5rem;
 }
 
-#menu a:hover{
+.menu a:hover{
     background-color: #00bfff;
+}
+
+table{
+    padding: 1rem;
+    text-align: center;
+    border-collapse: collapse;
+    color: #d4d4d4;
+    margin: auto;
+}
+
+td, th{
+    padding: 1rem 3rem;
+    font-size: 110%;
+    border: 0.1rem solid #00bfff;
 }

@@ -11,8 +11,8 @@
         <main>
             <h1 class="headtitle">Welcome!</h1>
             <h3 class="title">Select from the available options!</h3>
-            <div id="menu">
-                <a href="#">
+            <div class="menu">
+                <a href="./php/UserController.php">
                     <p>Users</p>
                 </a>
                 <a href="#">
