@@ -1,13 +1,13 @@
 <?php
 
-namespace php;
+namespace php\User;
 
 include("./UserModel.php");
 include("./UserView.php");
 
 class UserController
 {
-    function getUsers()
+    public function getUsers()
     {
         $userModel = new UserModel();
         $users = $userModel->getUsersFromDB();

@@ -1,6 +1,6 @@
 <?php
 
-namespace php;
+namespace php\User;
 
 class UserView
 {
@@ -13,7 +13,7 @@ class UserView
                     <meta author="Andor Balo">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Users</title>
-                    <link rel="stylesheet" href="../style/styles.css">
+                    <link rel="stylesheet" href="../../style/styles.css">
                 </head>
                 <body>
                     <main>
@@ -23,18 +23,15 @@ class UserView
                                 <th>User ID</th>
                                 <th>Name</th>
                             </tr>
-                            <?php
-                            if($users->num_rows > 0){
-                                while($user = $users->fetch_assoc()) { ?>
+                            <?php foreach($users as $user){?>
                                     <tr>
-                                        <td><?php echo $user["userid"]; ?></td>
-                                        <td><?php echo $user["username"]; ?></td>
+                                        <td><?php echo $user->getId(); ?></td>
+                                        <td><?php echo $user->getName(); ?></td>
                                     </tr>
-                                <?php }
-                                } ?>
+                                <?php } ?>
                         </table>
                         <div class="menu">
-                            <a href="../index.php">
+                            <a href="../../index.php">
                                 <p>Vissza</p>
                             </a>
                         </div>
@@ -44,5 +41,4 @@ class UserView
 
         <?php
     }
-
 }

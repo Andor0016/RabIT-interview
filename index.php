@@ -12,10 +12,10 @@
             <h1 class="headtitle">Welcome!</h1>
             <h3 class="title">Select from the available options!</h3>
             <div class="menu">
-                <a href="./php/UserController.php">
+                <a href="./php/User/UserController.php">
                     <p>Users</p>
                 </a>
-                <a href="#">
+                <a href="./php/Advertisement/AdvertisementController.php">
                     <p>Advertisements</p>
                 </a>
             </div>
