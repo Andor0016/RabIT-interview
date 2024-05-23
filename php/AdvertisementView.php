@@ -33,7 +33,7 @@ class AdvertisementView
                     <?php } ?>
                 </table>
                 <div class="menu">
-                    <a href="../index.php">
+                    <a href="/">
                         <p>Back</p>
                     </a>
                 </div>

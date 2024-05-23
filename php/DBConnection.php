@@ -26,7 +26,7 @@ class DBConnection
 
     //Create a connection with database
     private function connect(){
-        $serverCredentials = json_decode(file_get_contents("../resources/databaseCredentials.json"), true);
+        $serverCredentials = json_decode(file_get_contents($_SERVER["DOCUMENT_ROOT"] ."/resources/databaseCredentials.json"), true);
         $serverpath = $serverCredentials["dbconnection"];
         $username = $serverCredentials["dbuser"];
         $password = $serverCredentials["dbpassword"];

@@ -2,9 +2,9 @@
 
 namespace php;
 
-include("./User.php");
-include("./UserView.php");
-include("./DBConnection.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/php/User.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/php/UserView.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/php/DBConnection.php");
 
 class UserController
 {

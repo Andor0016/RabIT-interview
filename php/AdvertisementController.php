@@ -2,9 +2,9 @@
 
 namespace php;
 
-include("./Advertisement.php");
-include("./AdvertisementView.php");
-include("./DBConnection.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/php/Advertisement.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/php/AdvertisementView.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/php/DBConnection.php");
 
 class AdvertisementController
 {
