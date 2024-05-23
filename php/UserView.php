@@ -4,8 +4,8 @@ namespace php;
 
 class UserView
 {
-    public function showUsers($users){
-        ?>
+    //The following method shows the table with data
+    public function showUsers($users){ ?>
         <!DOCTYPE html>
             <html>
                 <head>
@@ -32,13 +32,12 @@ class UserView
                         </table>
                         <div class="menu">
                             <a href="../index.php">
-                                <p>Vissza</p>
+                                <p>Back</p>
                             </a>
                         </div>
                     </main>
                 </body>
             </html>
-
         <?php
     }
 }

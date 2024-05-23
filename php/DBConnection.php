@@ -6,6 +6,7 @@ use mysqli;
 
 class DBConnection
 {
+    //Return the result of query
     public function getUsers(){
         $connection = $this->connect();
         $sqlquery = "SELECT userid, username FROM users";
@@ -14,6 +15,7 @@ class DBConnection
         return $users;
     }
 
+    //Return the result of query
     public function getAdvertisements(){
         $connection = $this->connect();
         $sqlquery = "SELECT advid, username, advtitle FROM advertisements, users WHERE advertisements.userid = users.userid";
@@ -22,6 +24,7 @@ class DBConnection
         return $advertisements;
     }
 
+    //Create a connection with database
     private function connect(){
         $serverCredentials = json_decode(file_get_contents("../resources/databaseCredentials.json"), true);
         $serverpath = $serverCredentials["dbconnection"];
@@ -37,7 +40,7 @@ class DBConnection
 
         return $connection;
     }
-
+    //Close the connection with database
     private function disconnect($connection){
         $connection->close();
     }

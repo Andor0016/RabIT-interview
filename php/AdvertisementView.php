@@ -4,8 +4,8 @@ namespace php;
 
 class AdvertisementView
 {
-    public function showAdvertisements($advertisements){
-        ?>
+    //The following method shows the table with data
+    public function showAdvertisements($advertisements){ ?>
         <!DOCTYPE html>
         <html>
         <head>
@@ -16,31 +16,30 @@ class AdvertisementView
             <link rel="stylesheet" href="../style/styles.css">
         </head>
         <body>
-        <main>
-            <h3 class="title">Advertisements:</h3>
-            <table>
-                <tr>
-                    <th>Advertisement ID</th>
-                    <th>Name</th>
-                    <th>Advertisement title</th>
-                </tr>
-                <?php foreach($advertisements as $advertisement){?>
+            <main>
+                <h3 class="title">Advertisements:</h3>
+                <table>
                     <tr>
-                        <td><?php echo $advertisement->getId(); ?></td>
-                        <td><?php echo $advertisement->getUser() ?></td>
-                        <td><?php echo $advertisement->getTitle(); ?></td>
+                        <th>Advertisement ID</th>
+                        <th>Name</th>
+                        <th>Advertisement title</th>
                     </tr>
-                <?php } ?>
-            </table>
-            <div class="menu">
-                <a href="../index.php">
-                    <p>Vissza</p>
-                </a>
-            </div>
-        </main>
+                    <?php foreach($advertisements as $advertisement){?>
+                        <tr>
+                            <td><?php echo $advertisement->getId(); ?></td>
+                            <td><?php echo $advertisement->getUser() ?></td>
+                            <td><?php echo $advertisement->getTitle(); ?></td>
+                        </tr>
+                    <?php } ?>
+                </table>
+                <div class="menu">
+                    <a href="../index.php">
+                        <p>Back</p>
+                    </a>
+                </div>
+            </main>
         </body>
         </html>
-
         <?php
     }
 }
